@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component
 @Component
 class ScheduledPoster {
 
-    @Scheduled(fixedRate = 60_000)
+    @Scheduled(fixedRate = 600_000)
     fun postCurrentTime() {
         Poster().postImage()
     }
